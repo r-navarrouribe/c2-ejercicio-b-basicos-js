@@ -20,7 +20,7 @@ console.log(palabraMayorQue(magos, 4));
 function longitudStringsMedia(palabras) {
   let longitudTotal = 0;
   for (const palabra of palabras) {
-    longitudTotal = longitudTotal + palabra.length;
+    longitudTotal += palabra.length;
   }
   const longitudMedia = longitudTotal / palabras.length;
 
@@ -34,7 +34,7 @@ console.log(longitudStringsMedia(hobbits));
 /* Punto 3 */
 
 function transformaArrays(palabras) {
-  let newArray = [];
+  const newArray = [];
   for (const palabra of palabras) {
     if (palabra.includes(" ")) {
       newArray.push(palabra.toUpperCase());
@@ -49,7 +49,7 @@ const hechizos = [
   "expecto patronum",
   "imperius",
 ];
-
+console.log(hechizos);
 console.log(transformaArrays(hechizos));
 
 /* Punto 4 */
